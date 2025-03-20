@@ -545,3 +545,15 @@ print(intersection(l1,l2))      ```
 
 
 3.  [Union de listes](ex4.3)
+ ```
+    def union_sans_doublon(liste1, liste2):
+    # Utilisation de l'union des ensembles pour éliminer les doublons
+    return list(set(liste1) | set(liste2))
+
+# Exemple d'utilisation
+liste_a = [1, 2, 3, 4]
+liste_b = [3, 4, 5, 6]
+
+resultat = union_sans_doublon(liste_a, liste_b)
+print(resultat)
+ ```
